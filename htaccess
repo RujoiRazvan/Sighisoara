@@ -1,0 +1,5 @@
+ErrorDocument 404 /404.html
+
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^www.sighisoara.tk [NC]
+RewriteRule ^(.*)$ http://sighisoara.tk/$1 [L,R=301]
